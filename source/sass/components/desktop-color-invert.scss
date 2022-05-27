@@ -1,0 +1,5 @@
+.desktop-color-invert {
+  @media (min-width: $desktop-width) {
+    color: $color-accent;
+  }
+}

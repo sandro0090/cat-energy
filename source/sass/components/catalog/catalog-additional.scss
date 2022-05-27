@@ -1,0 +1,41 @@
+.catalog-additional {
+
+}
+
+.catalog-additional__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.catalog-additional__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-main;
+}
+
+.catalog-additional__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.catalog-additional__item {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 19px;
+  border-top: 1px solid #CDCDCD;
+  &:last-child {
+    border-bottom: 1px solid #CDCDCD;
+  }
+}
+ 
+
+
+.catalog-additional__gift {
+
+}

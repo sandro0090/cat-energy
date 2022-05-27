@@ -1,0 +1,27 @@
+.catalog-additional-gift {
+  margin-top: 35px;
+  background-color: $bg-color-accent;
+
+}
+
+.catalog-additional-gift__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-additional-gift__icon {
+
+}
+
+.catalog-additional-gift__text {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $color-accent;
+}

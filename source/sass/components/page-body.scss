@@ -1,0 +1,16 @@
+.page-body {
+
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #E5E5E5;
+    z-index: -2;
+
+  }
+}

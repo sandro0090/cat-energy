@@ -1,0 +1,53 @@
+.logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 9px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+}
+
+.logo__main-image {
+  display: block;
+  width: 34px;
+  height: 38px;
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("/img/components/page-header__logo--mobile-cat.svg");
+    margin-right: auto;
+  }
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+    background-image: url("/img/components/page-header__logo--tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    background-image: url("/img/components/page-header__logo--desktop.svg");
+  }
+}
+
+.logo__secondary-image {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    display: block;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 101px;
+    height: 18px;
+    background-image: url("/img/components/page-header__logo--mobile-text.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

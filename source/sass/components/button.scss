@@ -1,0 +1,29 @@
+.button {
+  width: 100%;
+  min-height: 40px;
+  margin: 0;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+  color: $color-accent;
+  background-color: $bg-color-accent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: $button-bg-color-secondary;
+  }
+  &:active {
+    color: rgba($color-accent, 0.3);
+    background-color: $button-bg-color-secondary;
+  }
+}

@@ -1,0 +1,135 @@
+.functional-nutrition {
+  position: relative;
+  background-color: $bg-color-accent;
+
+
+  @media (min-width: $tablet-width) {
+    height: 810px;
+    background-color: transparent;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      width: 709px;
+      height: 609px;
+      background-image: url('/img/components/functional-nutrition__can--tablet.png');
+      /* background-color: bisque; */
+      background-position: center;
+      background-repeat: no-repeat;
+/*       z-index: 0; */
+
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 553px;
+/*     background-color: $bg-color-main; */
+/*     background-color: hsla(0, 13%, 53%, 0.295); */
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      content: "";
+      width: 720px;
+      height: 720px;
+      background-color: rgba(104, 183, 56, 0.85);
+      z-index: 0;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 330px;
+      content: "";
+      width: 552px;
+      height: 500px;
+      background-image: url('/img/components/functional-nutrition__can--desktop.png');
+      /* background-color: bisque; */
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+
+  }
+}
+
+.functional-nutrition__wrapper {
+
+
+}
+
+.functional-nutrition__title {
+  margin: 0;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $color-accent;
+
+  @media (min-width: $tablet-width) {
+/*     padding-top: 30px; */
+    margin-left: 87px;
+    color: $color-main;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 79px;
+    margin-left: 80px;
+    text-align: left;
+  }
+}
+
+.functional-nutrition__slogan {
+  display: block;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $color-accent;
+
+  @media (min-width: $tablet-width) {
+    color: $color-main;
+    text-align: left;
+    margin-left: 87px;
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 20px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 49px;
+
+    text-align: left;
+  }
+}
+
+.functional-nutrition__button {
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: max-content;
+    margin-left: 87px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+
+  }
+}

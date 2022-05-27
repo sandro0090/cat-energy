@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content = "width=device-width, initial-scale=1">
   <title>Каталог продукции</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="inner-body">
 
@@ -10,7 +12,7 @@
   <header></header>
 
   <!-- MAIN MAIN MAIN MAIN MAIN -->
-  <main class="inner-main">
+  <main class="inner-main content-width">
     <header class="inner-header">
       <h1 class="inner-header__title">Каталог продукции</h1>
     </header>
@@ -21,67 +23,81 @@
           <!-- карточка товара -->
           <li class="catalog__item catalog-item">
             <a href="#" class="catalog-item__link">
-              <img class="catalog-item__image" src="#" >
+              <div class="catalog-item__image-wrapper">
+                <img class="catalog-item__image" src="./img/components/catalog/catalog__cat-enegry-pro-500-chicken.png" >
+              </div>
               <h3 class="catalog-item__title">Cat Energy PRO 500г</h3>
             </a>
-            <dl class="catalog-item__list">
-              <dt class="catalog-item__item catalog__parameters">Масса</dt>
-              <dd class="catalog-item__item catalog__discription">500г</dd>
-            </dl>
-            <dl class="catalog-item__list">
-              <dt class="catalog-item__item catalog__parameters">Вкус</dt>
-              <dd class="catalog-item__item catalog__discription">Курица</dd>
-            </dl>
-            <dl class="catalog-item__list">
-              <dt class="catalog-item__item catalog__parameters">Цена</dt>
-              <dd class="catalog-item__item catalog__discription">700p.</dd>
-            </dl>
+            <div class="catalog-item__list-wrapper">
+              <dl class="catalog-item__list">
+                <dt class="catalog-item__item catalog-item__parameters">Масса</dt>
+                <dd class="catalog-item__item catalog-item__discription">500г</dd>
+              </dl>
+              <dl class="catalog-item__list">
+                <dt class="catalog-item__item catalog-item__parameters">Вкус</dt>
+                <dd class="catalog-item__item catalog-item__discription">Курица</dd>
+              </dl>
+              <dl class="catalog-item__list">
+                <dt class="catalog-item__item catalog-item__parameters">Цена</dt>
+                <dd class="catalog-item__item catalog-item__discription">700p.</dd>
+              </dl>
+            </div>
             <button class="button catalog-item__button">Заказать</button>
           </li>
           <!-- карточка товара -->
           <li class="catalog__item catalog-item">
             <a href="#" class="catalog-item__link">
-              <img class="catalog-item__image" src="#" >
-              <h3 class="catalog-item__title">Cat Energy PRO 1000г</h3>
+              <div class="catalog-item__image-wrapper">
+                <img class="catalog-item__image" src="./img/components/catalog/catalog__cat-enegry-pro-500-chicken.png" >
+              </div>
+            <h3 class="catalog-item__title">Cat Energy PRO 1000г</h3>
             </a>
-            <dl class="catalog-item__list">
-              <dt class="catalog-item__item catalog__parameters">Масса</dt>
-              <dd class="catalog-item__item catalog__discription">1000г</dd>
-            </dl>
-            <dl class="catalog-item__list">
-              <dt class="catalog-item__item catalog__parameters">Вкус</dt>
-              <dd class="catalog-item__item catalog__discription">Курица</dd>
-            </dl>
-            <dl class="catalog-item__list">
-              <dt class="catalog-item__item catalog__parameters">Цена</dt>
-              <dd class="catalog-item__item catalog__discription">1000p.</dd>
-            </dl>
+            <div class="catalog-item__list-wrapper">
+              <dl class="catalog-item__list">
+                <dt class="catalog-item__item catalog-item__parameters">Масса</dt>
+                <dd class="catalog-item__item catalog-item__discription">1000г</dd>
+              </dl>
+              <dl class="catalog-item__list">
+                <dt class="catalog-item__item catalog-item__parameters">Вкус</dt>
+                <dd class="catalog-item__item catalog-item__discription">Курица</dd>
+              </dl>
+              <dl class="catalog-item__list">
+                <dt class="catalog-item__item catalog-item___parameters">Цена</dt>
+                <dd class="catalog-item__item catalog-item__discription">1000p.</dd>
+              </dl>
+            </div>
             <button class="button catalog-item__button">Заказать</button>
           </li>
           <!-- карточка товара -->
           <li class="catalog__item catalog-item">
             <a href="#" class="catalog-item__link">
-              <img class="catalog-item__image" src="#" >
+              <div class="catalog-item__image-wrapper">
+                <img class="catalog-item__image" src="./img/components/catalog/catalog__cat-enegry-pro-500-chicken.png" >
+              </div>
               <h3 class="catalog-item__title">Cat Energy Pro 500г</h3>
             </a>
-            <dl class="catalog-item__list">
-              <dt class="catalog-item__item catalog__parameters">Масса</dt>
-              <dd class="catalog-item__item catalog__discription">500г</dd>
-            </dl>
-            <dl class="catalog-item__list">
-              <dt class="catalog-item__item catalog__parameters">Вкус</dt>
-              <dd class="catalog-item__item catalog__discription">Рыба</dd>
-            </dl>
-            <dl class="catalog-item__list">
-              <dt class="catalog-item__item catalog__parameters">Цена</dt>
-              <dd class="catalog-item__item catalog__discription">700p.</dd>
-            </dl>
+            <div class="catalog-item__list-wrapper">
+              <dl class="catalog-item__list">
+                <dt class="catalog-item__item catalog-item__parameters">Масса</dt>
+                <dd class="catalog-item__item catalog-item__discription">500г</dd>
+              </dl>
+              <dl class="catalog-item__list">
+                <dt class="catalog-item__item catalog-item__parameters">Вкус</dt>
+                <dd class="catalog-item__item catalog-item__discription">Рыба</dd>
+              </dl>
+              <dl class="catalog-item__list">
+                <dt class="catalog-item__item catalog-item__parameters">Цена</dt>
+                <dd class="catalog-item__item catalog-item__discription">700p.</dd>
+              </dl>
+            </div>
             <button class="button catalog-item__button">Заказать</button>
           </li>
           <!-- карточка ПОКАЗАТЬ ВСЕ -->
           <li class="catalog__item catalog-show-more">
             <a href="#" class="catalog-show-more__link">
-              <img class="catalog-show-more__image" src="#" >
+              <div class="catalog-item__image-wrapper">
+                <img class="catalog-item__image" src="./img/components/catalog/catalog__cat-enegry-pro-500-chicken.png" >
+              </div>
               <h3 class="catalog-show-more__title">Показать еще 100500 товаров</h3>
             </a>
             <p class="catalog-show-more__text">На самом деле вкусов гораздо больше!</p>

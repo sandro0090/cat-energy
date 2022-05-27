@@ -3,6 +3,45 @@
 @import "./global/global.scss";
 
 
+@import "./components/content-width.scss";
 //components
-
+@import "./components/page.scss";
+@import "./components/page-main.scss";
 @import "./components/page-header.scss";
+@import "./components/logo.scss";
+@import "./components/page-body.scss";
+@import "./components/page-footer.scss";
+@import "./components/button.scss";
+
+@import "./components/address.scss";
+@import "./components/example.scss";
+@import "./components/functional-nutrition.scss";
+@import "./components/how-it-works.scss";
+@import "./components/main-nav.scss";
+@import "./components/parameters.scss";
+@import "./components/social.scss";
+@import "./components/visually-hidden.scss";
+@import "./components/weight.scss";
+
+//components - каталог
+@import "./components/catalog/inner-body.scss";
+@import "./components/catalog/inner-header.scss";
+@import "./components/catalog/inner-main.scss";
+@import "./components/catalog/catalog.scss";
+@import "./components/catalog/catalog-additional.scss";
+@import "./components/catalog/catalog-additional-gift.scss";
+@import "./components/catalog/catalog-additional-item.scss";
+@import "./components/catalog/catalog-item.scss";
+@import "./components/catalog/catalog-show-more.scss";
+
+//components - выбор программы
+@import "./components/program/program-selection.scss";
+@import "./components/program/program-form.scss";
+
+@import "./components/program/fieldset-additional.scss";
+@import "./components/program/fieldset-cat.scss";
+@import "./components/program/fieldset-comments.scss";
+@import "./components/program/fieldset-owner.scss";
+
+//корректировка цветов
+@import "./components/desktop-color-invert.scss";
