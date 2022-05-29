@@ -1,8 +1,20 @@
 .address {
+  background-color: rgba(0, 255, 255, 0.26);
+  position: relative;
+
+}
+
+.address__wrapper {
+  background-color: $bg-color-main;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   margin: 0;
   padding-top: 26px;
   padding-bottom: 26px;
-  background-color: aqua;
+/*   background-color: aqua; */
 
 
 
@@ -17,26 +29,15 @@
     min-height: 198px;
     top: 95px;
     left: 110px;
+    padding: 56px 80px;
 
-    padding-top: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 20px;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 
   }
-
-}
-
-.address__wrapper {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
 }
 
