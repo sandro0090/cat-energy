@@ -1,6 +1,6 @@
-.inner-header {
-
-}
+/* .inner-header {
+  background-color: rgb(101, 122, 115);
+} */
 
 .inner-header__title {
   font-family: 'Oswald';
@@ -10,3 +10,27 @@
   line-height: 36px;
   color: $color-main;
 }
+
+
+/* .inner-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-header__logo {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 800px;
+  background-color: aquamarine;
+}
+
+.inner-header__logo-image {
+
+  height: 100px;
+
+
+
+} */

@@ -3,7 +3,7 @@
 @import "./global/global.scss";
 
 
-@import "./components/content-width.scss";
+
 //components
 @import "./components/page.scss";
 @import "./components/page-main.scss";
@@ -12,8 +12,11 @@
 @import "./components/page-body.scss";
 @import "./components/page-footer.scss";
 @import "./components/button.scss";
+@import "./components/wrapper.scss";
+@import "./components/header.scss";
 
 @import "./components/address.scss";
+
 @import "./components/example.scss";
 @import "./components/functional-nutrition.scss";
 @import "./components/how-it-works.scss";
