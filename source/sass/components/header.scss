@@ -11,14 +11,12 @@
   @media (min-width: $tablet-width) {
     padding-top: 24px;
     padding-bottom: 32px;
-
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 53px;
     padding-bottom: 32px;
   }
-
 }
 
 .header__logo {
@@ -31,6 +29,7 @@
 }
 
 .header__nav {
-
-
+  @media (min-width: $desktop-width) {
+    max-width: 510px;
+  }
 }

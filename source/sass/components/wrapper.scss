@@ -5,6 +5,12 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: $bg-color-main;
+  height: 100%;
+
+  @media (max-width: $mobile-width-only) {
+
+
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
@@ -19,3 +25,27 @@
   }
 
 }
+
+.wrapper__footer {
+
+  /*   min-width: 320px; */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $bg-color-main;
+
+  @media (min-width: $tablet-width) {
+
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+
+  }
+
+}
+
+
+
+

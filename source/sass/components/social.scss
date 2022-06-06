@@ -1,5 +1,7 @@
 .social {
   margin: 0;
+  padding: 0;
+  background-color: $bg-color-secondary;
 
   @media (min-width: $tablet-width) {
 
@@ -10,18 +12,61 @@
 
 
   }
+/*   margin-bottom: 800px; */
 
 }
 
 .social__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 58px;
+    padding-bottom: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+
+  }
 
 }
 
-.social__logo-wrapper {
+.social__logo-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    padding-top: 39px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #D9D9D9;
+
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+
+  }
 
   &--logo {
 
@@ -32,15 +77,55 @@
 
 }
 
+.social__logo--icon {
+  color:#111111;
+}
+
 .social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+  }
+
 
 }
 
 .social__item {
 
+
+  @media (max-width: $mobile-width-only) {
+
+
+
+  }
+  @media (min-width: $tablet-width) {
+
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+
+  }
+
+
+
+
 }
 
 .social__link {
+  text-decoration: none;
 
 
   &--vk {
@@ -56,6 +141,34 @@
   }
 }
 
-.social__copyright {
+.social__link--icon {
+/*   margin: 50px; */
+  color: #666666;
+}
 
+.social__copyright {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    justify-content: flex-end;
+    border-top: 1px solid #D9D9D9;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+
+  }
+
+}
+
+.social__copyright--icon {
+  color:#666666;
 }

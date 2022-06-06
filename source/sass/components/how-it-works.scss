@@ -32,6 +32,24 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  margin-top: 25px;
+
+
+  @media (max-width: $mobile-width-only) {
+
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 60px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+  }
 }
 
 .how-it-works__list {
@@ -59,36 +77,109 @@
 }
 
 .how-it-works__item {
+/*   position: relative; */
+  z-index: 1;
   margin: 0;
   padding: 0;
   list-style: none;
   min-height: 60px;
+  display: flex;
+
+  @media (max-width: $mobile-width-only) {
+
+  }
+
+  @media (min-width: $tablet-width) {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 235px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 136px;
+      height: 235px;
+      background-image: url(../img/number1.svg);
+      background-position: top;
+      background-repeat: no-repeat;
+      z-index: -1;
+      }
+
+
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      left: auto;
+      transform: none;
+
+      }
+
+
+
+
+  }
+
 }
+
+
+
 /* .how-it-works__item:not(:last-child) {
   margin-bottom: 20px;
 } */
 
+.how-it-works__item--number1::before {
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/number1.svg);
+  }
+}
 
-.how-it-works__icon {
+.how-it-works__item--number2::before {
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/number2.svg);
+  }
+}
+
+.how-it-works__item--number3::before {
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/number3.svg);
+  }
+}
+
+.how-it-works__item--number4::before {
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/number4.svg);
+  }
+}
 
 
 
 
+.how-it-works__icon--wrapper {
+  background-color: $bg-color-accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &--nutrition {
+  @media (max-width: $mobile-width-only) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
 
   }
 
-  &--boil {
-
-  }
-
-  &--eating {
-
-  }
-
-  &--time {
-
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -102,4 +193,21 @@
   color: $color-secondary;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
 }
+
+

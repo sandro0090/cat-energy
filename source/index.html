@@ -1,52 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cat Energy</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+  @@include('html/head.html',{"title":"Cat Energy"})
   <body class="page-body">
-    <header class="page-header">
-      <div class="wrapper">
-        <div class="header">
-          <a href="#" class="header__logo logo">
-            <span class="logo__main-image">
-            </span>
-            <span class="logo__secondary-image">
-            </span>
 
-
-
-    <!--         <img class="logo__image logo__image--cat" src="./img/components/page-header__logo--mobile-cat.svg" alt="">
-            <img class="logo__image logo__image--text" src="./img/components/page-header__logo--mobile-text.svg" alt="">
-     -->
-          </a>
-          <nav class="main-nav header__nav">
-
-            <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
-              <li class="main-nav__item main-nav__item--current">
-                <a href="#" class="main-nav__link desktop-color-invert">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="catalog.html" class="main-nav__link desktop-color-invert">Каталог продукции</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="program.html" class="main-nav__link desktop-color-invert">Подбор программы</a>
-              </li>
-            </ul>
-
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-
-          </nav>
-
-        </div>
-
-      </div>
-
-    </header>
+    @@include('html/header.html',{"menu-color":"desktop-color-invert"})
     <!--     MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN  -->
     <main class="page-main">
       <div class="wrapper">
@@ -66,6 +23,7 @@
             <ul class="weight__list">
               <li class="weight__item weight__item--loss">
                 <h3 class="weight__title weight__title--loss">Похудение</h3>
+
                 <p class="weight__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a href="#" class="weight__link">Каталог slim</a>
               </li>
@@ -83,21 +41,46 @@
           <div class="how-it-works__wrapper">
             <h2 class="how-it-works__title">Как это работает</h2>
             <ul class="how-it-works__list">
-              <li class="how-it-works__item">
-                <span class="how-it-works__icon how-it-works__icon--nutrition"></span>
+              <li class="how-it-works__item how-it-works__item--number1">
+                <div class="how-it-works__icon--wrapper">
+                  <img class="how-it-works__icon how-it-works__icon--nutrition" width="25" height="28" src="img/how-it-works__icon--nutrition.svg" alt="">
+                </div>
                 <p class="how-it-works__text">Функциональное питание<br>содержит только полезные<br>питательные вещества.</p>
+<!--                 <span class="how-it-works__number1"></span> -->
+<!--                 <svg class="how-it-works__number-icon" width="71" height="227">
+                  <use href='img/sprite.svg#number1'></use>
+                </svg> -->
               </li>
-              <li class="how-it-works__item">
-                <span class="how-it-works__icon how-it-works__icon--boil"></span>
+              <li class="how-it-works__item how-it-works__item--number2">
+                <div class="how-it-works__icon--wrapper">
+                  <img class="how-it-works__icon how-it-works__icon--boil" width="29" height="31" src="img/how-it-works__icon--boil.svg" alt="">
+                </div>
                 <p class="how-it-works__text">Выпускается в виде порошка,<br>который нужно лишь залить<br>кипятком и готово.</p>
+<!--                 <span class="how-it-works__number2"></span> -->
+<!--                 <svg class="how-it-works__number-icon" width="113" height="229">
+                  <use href='img/sprite.svg#number2'></use>
+                </svg> -->
               </li>
-              <li class="how-it-works__item">
-                <span class="how-it-works__icon how-it-works__icon--eating"></span>
+              <li class="how-it-works__item how-it-works__item--number3">
+                <div class="how-it-works__icon--wrapper">
+                  <img class="how-it-works__icon how-it-works__icon--eating" width="25" height="30" src="img/how-it-works__icon--eating.svg" alt="">
+                </div>
                 <p class="how-it-works__text">Замените один-два приема<br>обычной еды на наше<br>функциональное питание.</p>
+<!--                 <span class="how-it-works__number3"></span> -->
+<!--                 <svg class="how-it-works__number-icon" width="112" height="232">
+                  <use href='img/sprite.svg#number3'></use>
+                </svg> -->
               </li>
-              <li class="how-it-works__item">
-                <span class="how-it-works__icon how-it-works__icon--time"></span>
+              <li class="how-it-works__item how-it-works__item--number4">
+                <div class="how-it-works__icon--wrapper">
+                  <img class="how-it-works__icon how-it-works__icon--time" width="32" height="33" src="img/how-it-works__icon--time.svg" alt="">
+                </div>
                 <p class="how-it-works__text">Уже через месяц наслаждайтесь<br>изменениями к лучшему<br>вашего питомца!</p>
+<!--                 <span class="how-it-works__number4"></span> -->
+
+<!--                 <svg class="how-it-works__number-icon" width="121" height="227">
+                  <use href='img/sprite.svg#number4'></use>
+                </svg> -->
               </li>
             </ul>
           </div>
@@ -128,54 +111,7 @@
 
     </main>
     <!--     футер футер футер футер футер футер футер футер футер -->
-    <footer class="page-footer">
-      <div class="wrapper">
-        <section class="address">
-          <div class="address__wrapper">
-            <div class="address__text-wrapper">
-              <span class="address__slogan">Приглашаем<br>к сотрудничеству<br>дилеров!</span>
-              <address>
-                <p class="address__text address__text--street">ул. Большая<br>Конюшенная, д. 19/8</p>
-                <p class="address__text address__text--city">Санкт-Петербург</p>
-              </address>
-
-            </div>
-            <!-- тут должна быть карта -->
-          </div>
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003178!2d30.32085871622026!3d59.93871916905397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1653758103080!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </section>
-
-        <section class="social">
-          <div class="social__wrapper">
-            <div class="social__logo-wrapper social__logo-wrapper--logo">
-              <img class="social__logo" src="" alt="Cat energy" width="128" height="24">
-            </div>
-            <!-- список сецсетей -->
-            <ul class="social__list">
-              <li class="social__item">
-                <a href="#" class="social__link social__link--vk">
-                  <span class="visually-hidden">Вконтакте</span>
-                  <!-- вставить svg в hmtl -->
-                </a>
-                <a href="#" class="social__link social__link--instagram">
-                  <span class="visually-hidden">Instagram</span>
-                  <!-- вставить svg в hmtl -->
-                </a>
-                <a href="#" class="social__link social__link--facebook">
-                  <span class="visually-hidden">Facebook</span>
-                  <!-- вставить svg в hmtl -->
-                </a>
-              </li>
-            </ul>
-            <div class="social__copyright">
-              <!-- вставить svg в hmtl -->
-            </div>
-          </div>
-        </section>
-      </div>
-
-    </footer>
+    @@include('html/footer.html',{})
 
     <script>
       const navMain = document.querySelector('.main-nav__list');

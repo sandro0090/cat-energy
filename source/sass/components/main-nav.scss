@@ -93,8 +93,8 @@
     width: max-content;
     border-color: transparent;
 
-    &:not(:last-child) {
-      margin-right: 34px;
+    &:not(:first-child) {
+      margin-left: 34px;
     }
 
     &--current {

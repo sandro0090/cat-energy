@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content = "width=device-width, initial-scale=1">
-  <title>Подбор программы</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="inner-body">
+  @@include('html/head.html',{"title":"Подбор программы"})
+<body class="page-body inner-body">
   <!-- HEADER HEADER HEADER HEADER HEADER -->
-  <header></header>
+  @@include('html/header.html', {"menu-color":""})
 
   <!-- MAIN MAIN MAIN MAIN MAIN -->
   <main class="inner-main">
@@ -22,7 +17,7 @@
     <section class="program-selection">
       <div class="program-selection__wrapper"></div>
       <h2 class="visually-hidden">Анкета</h2>
-      <!-- форма форма форма форма форма -->
+      <!-- форма форма форма форма форма  -->
       <form class="program-form" action="#" method="post">
         <!-- fieldset КОТ -->
         <fieldset class="program-form__fieldset fieldset-cat">
@@ -47,7 +42,7 @@
 
   </main>
 
-  <footer></footer>
+  @@include('html/footer.html',{})
 
 </body>
 </html>

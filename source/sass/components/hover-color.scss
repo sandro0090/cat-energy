@@ -1,0 +1,18 @@
+.hover-color {
+
+  &:hover{
+    cursor: pointer;
+    color: #68B738;
+
+  }
+  &:focus{
+    color: #68B738;
+
+  }
+  &:active{
+    color: #68B738;
+    opacity: 0.3;
+
+
+  }
+}
